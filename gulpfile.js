@@ -17,12 +17,12 @@ function htmlRu() {
     .pipe(
       include({
         prefix: '@@',
-      })
+      }),
     )
     .pipe(
       htmlmin({
         collapseWhitespace: true,
-      })
+      }),
     )
     .pipe(dest('./dist'))
 }
@@ -32,12 +32,12 @@ function htmlEn() {
     .pipe(
       include({
         prefix: '@@',
-      })
+      }),
     )
     .pipe(
       htmlmin({
         collapseWhitespace: true,
-      })
+      }),
     )
     .pipe(dest('./dist/en'))
 }
@@ -47,12 +47,12 @@ function scss() {
     .pipe(
       sass({
         importer: tildeImporter,
-      })
+      }),
     )
     .pipe(
       autoprefixer({
         overrideBrowserslist: ['last 2 versions'],
-      })
+      }),
     )
     .pipe(csso())
     .pipe(concat('index.css'))
