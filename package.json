@@ -18,7 +18,7 @@
     "url": "https://github.com/opv1/russia-layout/issues"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.5",
+    "browser-sync": "^2.27.10",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
